@@ -7,7 +7,8 @@ dotenv.config();
 
 console.log(process.env.mongourl);
 const app = express()
-const port = 4000
+const PORT = process.env.PORT
+
 
 // const movi = [{"id":"100",
 // "name":"Iron man 2",
@@ -165,4 +166,4 @@ const results = await client
 
 
  
-app.listen(port, () => console.log(`server started ${port}`))
+app.listen(PORT, () => console.log(`server started ${PORT}`))
