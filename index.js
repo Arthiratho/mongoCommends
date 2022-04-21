@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // console.log(process.env.mongourl);
+
 const app = express()
 const PORT = process.env.PORT
 
